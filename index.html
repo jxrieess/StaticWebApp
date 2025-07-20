@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jessa's Corner</title>
+  <style type="text/scss">
+    $primary: #ff6f61;
+    $accent: #ffe0e9;
+    $bg: #fff5f7;
+    $text: #2c3e50;
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, $accent, $bg);
+      color: $text;
+      line-height: 1.6;
+      padding: 2rem;
+    }
+
+    .wrapper {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 3rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 2rem;
+
+      h1 {
+        font-size: 3rem;
+        color: $primary;
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+      }
+    }
+
+    .section {
+      margin-top: 2.5rem;
+
+      h2 {
+        color: $primary;
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+      }
+
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      .skill {
+        background: $accent;
+        padding: 0.75rem 1.2rem;
+        border-radius: 8px;
+        font-weight: bold;
+      }
+    }
+
+    .hobbies-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+
+      .hobby {
+        background: #fce4ec;
+        padding: 1rem;
+        border-radius: 12px;
+        text-align: center;
+        font-weight: 500;
+      }
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 3rem;
+
+      a {
+        background: $primary;
+        color: white;
+        text-decoration: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 30px;
+        font-weight: bold;
+        transition: background 0.3s ease;
+
+        &:hover {
+          background: darken($primary, 10%);
+        }
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <section class="hero">
+      <h1>Welcome to Jessa's Corner</h1>
+      <p>A little space where thoughts, colors, and creativity come together.</p>
+    </section>
+
+    <section class="section about">
+      <h2>About Me</h2>
+      <p>Hello! I’m Jessa — someone who finds joy in small things and expresses big ideas through design, writing, and curiosity. Every day is a chance to learn something new.</p>
+    </section>
+
+    <section class="section skills">
+      <h2>Skills & Tools</h2>
+      <div class="skills">
+        <div class="skill">HTML & SCSS</div>
+        <div class="skill">Responsive Design</div>
+        <div class="skill">Figma</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">UI/UX Thinking</div>
+        <div class="skill">Git & GitHub</div>
+      </div>
+    </section>
+
+    <section class="section hobbies">
+      <h2>My Hobbies</h2>
+      <div class="hobbies-list">
+        <div class="hobby">📷 Photography</div>
+        <div class="hobby">✈️ Travel Blogging</div>
+        <div class="hobby">🎨 Digital Art</div>
+        <div class="hobby">📚 Reading Novels</div>
+        <div class="hobby">🎧 Curating Playlists</div>
+        <div class="hobby">🧘 Yoga & Wellness</div>
+      </div>
+    </section>
+
+    <section class="section life">
+      <h2>In Life, I Believe...</h2>
+      <p>That joy is found in presence, growth is powered by curiosity, and connection is the most beautiful form of creation. Whether through a quiet walk, a messy sketchbook, or a spontaneous laugh — life is best when it’s honest and a little imperfect.</p>
+    </section>
+
+    <section class="cta">
+      <p>Let’s connect and create together!</p>
+      <a href="mailto:jessa@example.com">Reach Out to Jessa</a>
+    </section>
+  </div>
+</body>
+</html>
